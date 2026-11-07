@@ -8,13 +8,16 @@
 
 ## 🎬 45-second project walkthrough
 
-Click the preview below to open the 45-second MP4 walkthrough.
+The animated preview below plays directly in the README.
 
-[![Watch the 45-second Seated Posture Monitor walkthrough](docs/assets/posture-monitor-demo-poster.png)](docs/assets/posture-monitor-demo-45s.mp4)
+![45-second Seated Posture Monitor walkthrough](docs/assets/posture-monitor-demo-inline.gif)
 
-**[▶ Watch / open the 45-second demo video](docs/assets/posture-monitor-demo-45s.mp4)** · [Subtitles](docs/assets/posture-monitor-demo.srt)
+- [▶ Open/download the full-resolution 45-second MP4](docs/assets/posture-monitor-demo-45s.mp4)
+- [Download the SRT subtitle file](docs/assets/posture-monitor-demo-subtitles.srt)
 
 > **Demo disclosure:** This is a simulated product walkthrough with an illustrative interface and synthetic metrics. It is not a recording of a real webcam session, a live MediaPipe inference run, or evidence of validated posture-detection accuracy. Real-device validation must be demonstrated separately using a genuine 30–60-second session recording.
+
+> **Playback note:** GitHub does not reliably play an MP4 committed as a normal repository file when it is linked from a README; browsers may download it instead. The inline GIF preview is included for immediate viewing. For a native video player with controls, upload the subtitled MP4 through GitHub's Markdown attachment UI and use the generated `https://github.com/user-attachments/assets/...` URL in a `<video controls>` element.
 
 ---
 
