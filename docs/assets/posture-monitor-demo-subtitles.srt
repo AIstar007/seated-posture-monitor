@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:05,000
+Seated Posture Monitor — a CPU-first, local posture-observation CLI. This is a simulated product walkthrough.
+
+2
+00:00:05,000 --> 00:00:13,000
+Camera diagnostics distinguish person detection from usable posture geometry.
+
+3
+00:00:13,000 --> 00:00:21,000
+A short calibration collects stable reference samples. The values shown are illustrative.
+
+4
+00:00:21,000 --> 00:00:31,000
+Temporal smoothing and confirmation prevent a single poor frame from becoming a posture break.
+
+5
+00:00:31,000 --> 00:00:39,000
+The session report keeps posture score, unknown time and confidence visible. All metrics here are synthetic.
+
+6
+00:00:39,000 --> 00:00:45,000
+Clean Architecture, SOLID principles, local processing and automated tests. Real webcam validation remains separate.
+
