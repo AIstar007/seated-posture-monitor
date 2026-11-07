@@ -1,0 +1,4 @@
+# CPU-only runtime stack (Python 3.10+)
+mediapipe==1.2.2
+opencv-python>=4.10,<5
+numpy>=1.26,<3

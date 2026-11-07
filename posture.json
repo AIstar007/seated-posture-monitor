@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.2",
+  "sample_only": true,
+  "submission_ready": false,
+  "note": "Illustrative output only. Replace this file with a real 30-60 second webcam/video run before submission.",
+  "application": {
+    "name": "seated-posture-monitor",
+    "version": "1.2.4"
+  },
+  "session": {
+    "started_at_utc": "2026-11-07T08:30:00+00:00",
+    "source_type": "synthetic_example",
+    "source": "not-a-real-recording",
+    "preview_enabled": false,
+    "calibration": {
+      "enabled": false,
+      "status": "disabled",
+      "baseline": null,
+      "stability_limits": null,
+      "relative_score_zero_delta": null
+    },
+    "camera_view": "45-degree"
+  },
+  "metrics": {
+    "session_duration_s": 30.0,
+    "good_posture_duration_s": 13.8,
+    "bad_posture_duration_s": 13.2,
+    "unclassified_duration_s": 3.0,
+    "good_posture_pct": 46.0,
+    "good_posture_pct_of_classified_time": 51.1,
+    "stable_observation_coverage_pct": 90.0,
+    "mean_frame_quality": 67.4,
+    "posture_score_0_100": 46.0,
+    "posture_break_count": 1,
+    "posture_breaks": [
+      {
+        "start_s": 16.0,
+        "end_s": 29.2,
+        "duration_s": 13.2
+      }
+    ],
+    "classified_time_coverage_pct": 90.0,
+    "mean_landmark_confidence": 0.94,
+    "feature_statistics": {
+      "trunk_pitch_deg": {
+        "samples": 292,
+        "mean": 16.4,
+        "min": 3.9,
+        "max": 32.8
+      },
+      "lateral_lean_ratio": {
+        "samples": 292,
+        "mean": 0.071,
+        "min": 0.008,
+        "max": 0.191
+      },
+      "shoulder_roll_deg": {
+        "samples": 292,
+        "mean": 7.1,
+        "min": 0.8,
+        "max": 19.2
+      }
+    }
+  },
+  "processing": {
+    "frames_read": 900,
+    "frames_sampled": 300,
+    "pose_detected_frames": 292,
+    "frames_without_pose": 5,
+    "dropped_or_corrupt_frames": 3,
+    "recoverable_inference_errors": 0,
+    "valid_pose_sample_pct": 97.33
+  },
+  "decision_config": {
+    "landmark_visibility_min": 0.55,
+    "trunk_pitch_good_deg": 10.0,
+    "trunk_pitch_bad_deg": 25.0,
+    "lateral_lean_good_ratio": 0.05,
+    "lateral_lean_bad_ratio": 0.18,
+    "shoulder_roll_good_deg": 5.0,
+    "shoulder_roll_bad_deg": 18.0,
+    "feature_weights": {
+      "trunk_pitch": 0.65,
+      "lateral_lean": 0.2,
+      "shoulder_roll": 0.15
+    },
+    "ema_time_constant_s": 0.65,
+    "bad_enter_score": 58.0,
+    "good_enter_score": 72.0,
+    "state_confirmation_s": 0.75,
+    "max_observation_gap_s": 1.0,
+    "sample_fps": 10.0,
+    "pose_model": "pose_landmarker_lite-v1.task",
+    "inference_delegate": "CPU"
+  }
+}
